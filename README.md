@@ -16,18 +16,18 @@ Insertion Sort:
 - Best Case: Kasus terbaik terjadi ketika array sudah dalam keadaan terurut secara menaik. Pada kasus ini, Insertion Sort hanya akan memeriksa bahwa tidak ada pemindahan yang perlu dilakukan, sehingga kompleksitas waktu Insertion Sort adalah O(n), di mana n adalah jumlah elemen dalam array.
 - Average Case: Pada kasus rata-rata, kompleksitas waktu Insertion Sort adalah O(n^2), karena algoritma ini melakukan pemindahan elemen-elemen yang diperlukan pada setiap iterasi, terlepas dari kondisi awal array.
 
-<h5>Analisis Algoritma TSP dan algoritma Dijkstra:</h5>
+<h5>Analisis Algoritma TSP dan algoritma Djikstra:</h5>
 Worst Case:
 
 - TSP: Pada kasus terburuk, algoritma TSP akan mengunjungi setiap node secara berurutan sebanyak N - 1 kali, di mana N adalah jumlah total node dalam grafik. Oleh karena itu, kompleksitas waktu algoritma TSP dalam kasus terburuk adalah O(N^2).
-- Dijkstra: Pada kasus terburuk, algoritma Dijkstra akan mengunjungi setiap node dalam grafik dan memperbarui jarak terpendek untuk setiap node yang dikunjungi. Kompleksitas waktu algoritma Dijkstra dalam kasus terburuk adalah O((V + E) log V), di mana V adalah jumlah node dan E adalah jumlah edge dalam grafik.
+- Djikstra: Pada kasus terburuk, algoritma Djikstra akan mengunjungi setiap node dalam grafik dan memperbarui jarak terpendek untuk setiap node yang dikunjungi. Kompleksitas waktu algoritma Djikstra dalam kasus terburuk adalah O((V + E) log V), di mana V adalah jumlah node dan E adalah jumlah edge dalam grafik.
 
 Best Case:
 
 - TSP: Pada kasus terbaik, algoritma TSP mungkin memiliki simpul awal yang langsung terhubung ke simpul lain dengan jarak minimum. Dalam hal ini, algoritma hanya akan memilih simpul tersebut sebagai simpul berikutnya dalam setiap iterasi, sehingga kompleksitas waktu algoritma TSP dalam kasus terbaik adalah O(N).
-- Dijkstra: Pada kasus terbaik, algoritma Dijkstra mungkin memiliki simpul awal yang langsung terhubung ke semua simpul lain dengan jarak minimum. Dalam hal ini, algoritma hanya akan memperbarui jarak terpendek untuk setiap simpul yang dikunjungi, sehingga kompleksitas waktu algoritma Dijkstra dalam kasus terbaik adalah O(V + E).
+- Djikstra: Pada kasus terbaik, algoritma Djikstra mungkin memiliki simpul awal yang langsung terhubung ke semua simpul lain dengan jarak minimum. Dalam hal ini, algoritma hanya akan memperbarui jarak terpendek untuk setiap simpul yang dikunjungi, sehingga kompleksitas waktu algoritma Djikstra dalam kasus terbaik adalah O(V + E).
 
 Average Case:
 
 - TSP: Untuk algoritma TSP, kompleksitas waktu rata-rata tergantung pada struktur grafik dan jarak antara simpul-simpulnya. Dalam kasus rata-rata, algoritma TSP memiliki kompleksitas waktu sekitar O(N^2), di mana N adalah jumlah total node dalam grafik.
-- Dijkstra: Untuk algoritma Dijkstra, kompleksitas waktu rata-rata tergantung pada struktur grafik dan panjang edge-edge dalam grafik. Dalam kasus rata-rata, kompleksitas waktu algoritma Dijkstra adalah sekitar O((V + E) log V), di mana V adalah jumlah node dan E adalah jumlah edge dalam grafik.
+- Djikstra: Untuk algoritma Djikstra, kompleksitas waktu rata-rata tergantung pada struktur grafik dan panjang edge-edge dalam grafik. Dalam kasus rata-rata, kompleksitas waktu algoritma Djikstra adalah sekitar O((V + E) log V), di mana V adalah jumlah node dan E adalah jumlah edge dalam grafik.
