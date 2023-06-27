@@ -36,7 +36,7 @@ def tsp(graph, start):
     print(f"Hasil Akhir: Path = {path}, Distance = {total_distance}")
     return path, total_distance
 
-def dijkstra(graph, start):
+def djikstra(graph, start):
     num_nodes = len(graph)
     distance = {node: sys.maxsize for node in graph}
     distance[start] = 0
@@ -82,7 +82,7 @@ def main():
         print(node, end=' ')
     print()
 
-    algorithm = input("Pilih algoritma (TSP / Dijkstra): ").lower()
+    algorithm = input("Pilih algoritma (TSP / Djikstra): ").lower()
 
     if algorithm == "tsp":
         start = input("Masukkan node awal: ")
@@ -91,10 +91,10 @@ def main():
         end_time = time.time()
         print(f"Waktu komputasi: {end_time - start_time} detik")
 
-    elif algorithm == "dijkstra":
+    elif algorithm == "djikstra":
         start = input("Masukkan node awal: ")
         start_time = time.time()
-        shortest_path, total_distance = dijkstra(graph, start)
+        shortest_path, total_distance = djikstra(graph, start)
         end_time = time.time()
         print(f"Waktu komputasi: {end_time - start_time} detik")
 
